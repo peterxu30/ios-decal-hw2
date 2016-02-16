@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="bmailButton" destination="gnX-2g-Enm" id="XDy-yY-3nI"/>
+                <outlet property="calCentralButton" destination="NYd-5V-wQ8" id="QHw-J6-Wio"/>
+                <outlet property="deleteButton" destination="zMO-iY-Bn5" id="Q3h-lR-wY2"/>
+                <outlet property="facebookButton" destination="5ek-4y-7eU" id="GXg-ga-OTx"/>
+                <outlet property="gmailButton" destination="3yf-xZ-5yK" id="rlT-QT-bB0"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="returnButton" destination="uky-Pz-RSv" id="dMq-XF-Dx8"/>
+                <outlet property="stackOverflowButton" destination="b8k-Vc-nGc" id="Ucz-pd-Nro"/>
+                <outlet property="teleBearsButton" destination="ZUD-WB-eCS" id="kHM-h2-65G"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,22 +22,111 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNL-WW-cNy">
+                    <rect key="frame" x="0.0" y="134" width="375" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="7H8-el-2yz"/>
+                                <constraint firstAttribute="width" constant="125" id="UDe-XE-Vpn"/>
+                            </constraints>
+                            <state key="normal" title="Next Keyboard"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-iY-Bn5">
+                            <rect key="frame" x="125" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="FBJ-Br-lrv"/>
+                                <constraint firstAttribute="width" constant="125" id="Hnu-o7-TQ0"/>
+                            </constraints>
+                            <state key="normal" title="Delete"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uky-Pz-RSv">
+                            <rect key="frame" x="250" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="2fJ-Aq-ZDy"/>
+                                <constraint firstAttribute="height" constant="63" id="XMI-Gl-KdX"/>
+                            </constraints>
+                            <state key="normal" title="Return"/>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
+                        <constraint firstAttribute="width" constant="375" id="Fqd-T5-YJJ"/>
+                        <constraint firstAttribute="height" constant="63" id="kvF-T4-ol7"/>
                     </constraints>
-                    <state key="normal" title="N"/>
-                </button>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Ck-Iag">
+                    <rect key="frame" x="0.0" y="67" width="375" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ek-4y-7eU">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="Yfi-Jx-Dno"/>
+                                <constraint firstAttribute="height" constant="63" id="f8c-0n-WF1"/>
+                            </constraints>
+                            <state key="normal" title="Facebook"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yf-xZ-5yK">
+                            <rect key="frame" x="125" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="Rno-2R-LIR"/>
+                                <constraint firstAttribute="width" constant="125" id="SWv-r8-LaN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Gmail">
+                                <color key="titleColor" red="0.039215686274509803" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-2g-Enm">
+                            <rect key="frame" x="250" y="0.0" width="125" height="63"/>
+                            <state key="normal" title="Bmail">
+                                <color key="titleColor" red="0.039215686274509803" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="Nfg-Ja-zDF"/>
+                        <constraint firstAttribute="height" constant="63" id="kGd-mg-aHV"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztj-CK-BAt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUD-WB-eCS">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="AA4-Xd-NYn"/>
+                                <constraint firstAttribute="height" constant="63" id="VZF-dT-cLW"/>
+                            </constraints>
+                            <state key="normal" title="TeleBears"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8k-Vc-nGc">
+                            <rect key="frame" x="125" y="0.0" width="125" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="4dx-Et-ACE"/>
+                                <constraint firstAttribute="width" constant="125" id="Gzk-Ig-6ty"/>
+                            </constraints>
+                            <state key="normal" title="Stack Overflow"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYd-5V-wQ8">
+                            <rect key="frame" x="250" y="0.0" width="125" height="63"/>
+                            <state key="normal" title="Cal Central"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="86n-3i-Qbb"/>
+                        <constraint firstAttribute="height" constant="63" id="I1i-3e-xic"/>
+                    </constraints>
+                </stackView>
             </subviews>
+            <color key="backgroundColor" red="0.9359524978184991" green="0.9359524978184991" blue="0.9359524978184991" alpha="0.81715425531914898" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="ztj-CK-BAt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sys-Us-5Pt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="569.5" y="531"/>
         </view>
     </objects>
 </document>
