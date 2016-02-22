@@ -15,9 +15,6 @@
 		3AAA63A41BA9263900E3822E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA63A21BA9263900E3822E /* LaunchScreen.storyboard */; };
 		3AAA63B31BA9283500E3822E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA63B21BA9283500E3822E /* KeyboardViewController.swift */; };
 		3AAA63B71BA9283500E3822E /* CalKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AAA63B01BA9283500E3822E /* CalKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D0AB35F81C6D648E00C1CC1E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB35F71C6D648E00C1CC1E /* KeyboardViewController.swift */; };
-		D0AB35FC1C6D648E00C1CC1E /* PeterKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0AB35F51C6D648E00C1CC1E /* PeterKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D0C63ED01C72971C00AE0FD7 /* gmail.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C63ECF1C72971C00AE0FD7 /* gmail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +25,6 @@
 			remoteGlobalIDString = 3AAA63AF1BA9283500E3822E;
 			remoteInfo = CalKeyboard;
 		};
-		D0AB35FA1C6D648E00C1CC1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AAA638E1BA9263900E3822E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0AB35F41C6D648E00C1CC1E;
-			remoteInfo = PeterKeyboard;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D0AB35FC1C6D648E00C1CC1E /* PeterKeyboard.appex in Embed App Extensions */,
 				3AAA63B71BA9283500E3822E /* CalKeyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -64,10 +53,6 @@
 		3AAA63B01BA9283500E3822E /* CalKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CalKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAA63B21BA9283500E3822E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		3AAA63B41BA9283500E3822E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0AB35F51C6D648E00C1CC1E /* PeterKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PeterKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AB35F71C6D648E00C1CC1E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		D0AB35F91C6D648E00C1CC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0C63ECF1C72971C00AE0FD7 /* gmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gmail.png; path = Assets.xcassets/gmail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0AB35F21C6D648E00C1CC1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +78,6 @@
 			children = (
 				3AAA63981BA9263900E3822E /* CustomKeyboard */,
 				3AAA63B11BA9283500E3822E /* CalKeyboard */,
-				D0AB35F61C6D648E00C1CC1E /* PeterKeyboard */,
 				3AAA63971BA9263900E3822E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,7 +87,6 @@
 			children = (
 				3AAA63961BA9263900E3822E /* CustomKeyboard.app */,
 				3AAA63B01BA9283500E3822E /* CalKeyboard.appex */,
-				D0AB35F51C6D648E00C1CC1E /* PeterKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +98,6 @@
 				3AAA639B1BA9263900E3822E /* ViewController.swift */,
 				3AAA639D1BA9263900E3822E /* Main.storyboard */,
 				3AAA63A01BA9263900E3822E /* Assets.xcassets */,
-				D0C63ECF1C72971C00AE0FD7 /* gmail.png */,
 				3AAA63A21BA9263900E3822E /* LaunchScreen.storyboard */,
 				3AAA63A51BA9263900E3822E /* Info.plist */,
 			);
@@ -137,15 +112,6 @@
 				3AAA63B41BA9283500E3822E /* Info.plist */,
 			);
 			path = CalKeyboard;
-			sourceTree = "<group>";
-		};
-		D0AB35F61C6D648E00C1CC1E /* PeterKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				D0AB35F71C6D648E00C1CC1E /* KeyboardViewController.swift */,
-				D0AB35F91C6D648E00C1CC1E /* Info.plist */,
-			);
-			path = PeterKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +130,6 @@
 			);
 			dependencies = (
 				3AAA63B61BA9283500E3822E /* PBXTargetDependency */,
-				D0AB35FB1C6D648E00C1CC1E /* PBXTargetDependency */,
 			);
 			name = CustomKeyboard;
 			productName = CustomKeyboard;
@@ -188,23 +153,6 @@
 			productReference = 3AAA63B01BA9283500E3822E /* CalKeyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		D0AB35F41C6D648E00C1CC1E /* PeterKeyboard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0AB35FF1C6D648E00C1CC1E /* Build configuration list for PBXNativeTarget "PeterKeyboard" */;
-			buildPhases = (
-				D0AB35F11C6D648E00C1CC1E /* Sources */,
-				D0AB35F21C6D648E00C1CC1E /* Frameworks */,
-				D0AB35F31C6D648E00C1CC1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PeterKeyboard;
-			productName = PeterKeyboard;
-			productReference = D0AB35F51C6D648E00C1CC1E /* PeterKeyboard.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,9 +168,6 @@
 					};
 					3AAA63AF1BA9283500E3822E = {
 						CreatedOnToolsVersion = 7.0;
-					};
-					D0AB35F41C6D648E00C1CC1E = {
-						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -241,7 +186,6 @@
 			targets = (
 				3AAA63951BA9263900E3822E /* CustomKeyboard */,
 				3AAA63AF1BA9283500E3822E /* CalKeyboard */,
-				D0AB35F41C6D648E00C1CC1E /* PeterKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -253,7 +197,6 @@
 			files = (
 				3AAA63A41BA9263900E3822E /* LaunchScreen.storyboard in Resources */,
 				3AAA63A11BA9263900E3822E /* Assets.xcassets in Resources */,
-				D0C63ED01C72971C00AE0FD7 /* gmail.png in Resources */,
 				3AAA639F1BA9263900E3822E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,13 +206,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A55544A1BA930D800AF502F /* Keyboard.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0AB35F31C6D648E00C1CC1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0AB35F11C6D648E00C1CC1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0AB35F81C6D648E00C1CC1E /* KeyboardViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = 3AAA63AF1BA9283500E3822E /* CalKeyboard */;
 			targetProxy = 3AAA63B51BA9283500E3822E /* PBXContainerItemProxy */;
-		};
-		D0AB35FB1C6D648E00C1CC1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0AB35F41C6D648E00C1CC1E /* PeterKeyboard */;
-			targetProxy = D0AB35FA1C6D648E00C1CC1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,30 +386,6 @@
 			};
 			name = Release;
 		};
-		D0AB35FD1C6D648E00C1CC1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PeterKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard.PeterKeyboard";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D0AB35FE1C6D648E00C1CC1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PeterKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard.PeterKeyboard";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,15 +412,6 @@
 			buildConfigurations = (
 				3AAA63B91BA9283500E3822E /* Debug */,
 				3AAA63BA1BA9283500E3822E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0AB35FF1C6D648E00C1CC1E /* Build configuration list for PBXNativeTarget "PeterKeyboard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0AB35FD1C6D648E00C1CC1E /* Debug */,
-				D0AB35FE1C6D648E00C1CC1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
